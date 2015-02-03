@@ -23,7 +23,7 @@ exports.encode = function(input){
     
         if (isNaN(chr2)) {
             enc3 = enc4 = 64;
-        } else if (isNaN(chr3)) {
+        } else if (isNaN(chr3)) { 
             enc4 = 64;
         }
 
