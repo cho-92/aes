@@ -117,7 +117,7 @@ function Mcrypt(){
 						out+=String.fromCharCode(iv[j]);
 				}
 				
-				Ti.API.info('iv = '+iv.join());
+				console.log('iv = '+iv.join());
 				break;
 			case 'cbc':
 				if(encrypt){
