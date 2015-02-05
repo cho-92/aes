@@ -49,11 +49,11 @@ exports.decode = function(input) {
 
     var base64test = /[^A-Za-z0-9\+\/\=]/g;
     if (base64test.exec(input)) {
-        Ti.API.info("There were invalid base64 characters in the input text.\n" +
+        console.log("There were invalid base64 characters in the input text.\n" +
               "Valid base64 characters are A-Z, a-z, 0-9, '+', '/',and '='\n" +
               "Expect errors in decoding.");
     } else {
-        Ti.API.info("");
+        console.log("");
     }
     input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
 
